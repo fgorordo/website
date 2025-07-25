@@ -16,7 +16,7 @@ export const ContactSection: FC<ContactSectionProps> = ({ containerMain }) => {
                     <div className='mt-4'>
                         <h3 className='text-primary text-lg mb-2 md:text-xl'>Información de contacto</h3>
                         <p><span className='font-bold'>Email:</span> contacto@ksqpergamino.com.ar</p>
-                        <p><span className='font-bold'>Oficinas comerciales:</span> Ruta 8 Km. 123 - Pergamino, Buenos Aires</p>
+                        <p><span className='font-bold'>Oficinas comerciales:</span> Ruta 8, 841 - Pergamino, Buenos Aires</p>
                         <p><span className='font-bold'>Horario de atención:</span> Lunes a Sábados de 8:00 a 19:00</p>
                     </div>
 

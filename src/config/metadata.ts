@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const mainMetadata: Metadata = {
   title: {
-    template: '%s | KSQ Pergamino',
+    template: '%s | KSQ Pergamino S.A',
     default: 'KSQ Pergamino | Fertilizantes Sustentables con Nanotecnología',
   },
   description:

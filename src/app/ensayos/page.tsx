@@ -1,5 +1,5 @@
 import { FC, PropsWithChildren } from "react";
-import { TrialCard } from "@/components/cards";
+import { CardsContainer, TrialCard } from "@/components/cards";
 import { PageContainer, PageTitle } from "@/components/common";
 import { trials } from "@/data/trail.data";
 import { Metadata } from 'next';
@@ -7,14 +7,6 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Biblioteca de Ensayos" 
-}
-
-export const CardsContainer: FC<PropsWithChildren> = ({ children }) => {
-    return (
-        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-[32px]">
-            {children}
-        </div>
-    )
 }
 
 export default function Page() {
