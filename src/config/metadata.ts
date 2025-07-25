@@ -1,7 +1,10 @@
 import { Metadata } from "next";
 
 export const mainMetadata: Metadata = {
-  title: 'KSQ Pergamino | Distribuidora Oficial de Kioshi Stone - Fertilizantes Sustentables con Nanotecnología',
+  title: {
+    template: '%s | KSQ Pergamino',
+    default: 'KSQ Pergamino | Fertilizantes Sustentables con Nanotecnología',
+  },
   description:
     'KSQ Pergamino distribuye fertilizantes ecológicos y sustentables de Kioshi Stone. Tecnología nanométrica aplicada al agro para cultivos más saludables, alto rendimiento y mínimo impacto ambiental. Productos bio, eco-friendly y responsables con el suelo y el entorno.',
   keywords: [

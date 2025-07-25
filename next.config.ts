@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
         hostname: "kioshistone.nyc3.digitaloceanspaces.com"
       }
     ]
-  }
+  },
 };
 
 export default nextConfig;

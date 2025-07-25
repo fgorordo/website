@@ -4,6 +4,7 @@ export type Protocol = {
     crop_svg: string;
     cover_img: string;
     associated_products_id: string[];
-    caption: string;
+    captions: string[];
     protocol_img: string;
+    slug: string;
 };
