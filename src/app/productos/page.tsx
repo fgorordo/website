@@ -1,6 +1,7 @@
 import { CatalogFilters, DynamicCatalog } from '@/components/catalog';
 import { PageContainer, PageHeader } from "@/components/common";
 import { Metadata } from "next";
+import { Suspense } from 'react';
 
 export const metadata: Metadata = {
     title: "Catálogo de Productos | KSQ Pergamino",
@@ -43,10 +44,13 @@ export default async function Page() {
     return (
         <PageContainer>
             <div className='flex gap-8 w-full flex-col md:flex-row'>
+                <div className='block md:hidden'><PageHeader title='Catálogo de Productos' /></div>
                 <CatalogFilters />
                 <div className='flex flex-col gap-2 flex-1'>
-                    <PageHeader title='Catálogo de Productos' />
+                <div className='hidden md:block'><PageHeader title='Catálogo de Productos' /></div>
+                <Suspense fallback={<p>Cargando...</p>}>
                     <DynamicCatalog />
+                </Suspense>
                 </div>
             </div>
         </PageContainer>

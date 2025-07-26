@@ -8,16 +8,18 @@ export const FeaturedProducts = () => {
 
     const productsToRender: Product[] = products.filter(p => featuredProductsIds.includes(p.id))
 
-    
+
 
     return (
         <PageContainer>
-            <PageTitle>Productos destacados</PageTitle>
-            <PageSubtitle>Nanotecnología al servicio de una agricultura más limpia, eficiente y regenerativa.</PageSubtitle>
+            <div className="flex flex-col gap-2">
+                <PageTitle>Productos destacados</PageTitle>
+                <PageSubtitle>Nanotecnología al servicio de una agricultura más limpia, eficiente y regenerativa.</PageSubtitle>
+            </div>
             <CardsContainer>
                 {
                     productsToRender.map(p => (
-                        <ProductCard 
+                        <ProductCard
                             key={p.id}
                             name={p.name}
                             image_url={p.image_url}

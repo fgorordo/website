@@ -93,7 +93,7 @@ export const DynamicCatalog: FC = () => {
     return (
         <>
             <p className='text-2xl lg:text-3xl font-light z-20 mb-4'>{search ? `Productos encontrados para: ${search.charAt(0).toUpperCase() + search.slice(1)}` : 'Todos los productos'}</p>
-            <ScrollArea className='h-[52vh] px-6'>
+            <ScrollArea className='h-[60vh] px-6 border rounded-lg py-4'>
                 <CardsContainer>
                     {
                         products.map(p => (

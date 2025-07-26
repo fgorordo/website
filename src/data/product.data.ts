@@ -13,7 +13,10 @@ export const products: Product[] = [
             "Girasol",
             "Trigo",
             "Maíz",
-            "Algodón"
+            "Algodón",
+            "Sorgo",
+            "Trigo",
+            "Soja",
         ],
         brand: "Mist",
         description_html: "",
@@ -129,7 +132,6 @@ export const products: Product[] = [
         sub_category: "Balanceados",
         crops: [
             "Frutales",
-            "Trigo"
         ],
         brand: "Mist",
         description_html: "",
@@ -336,7 +338,7 @@ export const products: Product[] = [
         sub_category: "Microelementos",
         crops: [
             "Trigo",
-            "Maíz"
+            "Maíz",
         ],
         brand: "Mist",
         description_html: "",
@@ -413,7 +415,9 @@ export const products: Product[] = [
         slug: "mist-vl",
         category: "Vivificante de semillas",
         sub_category: undefined,
-        crops: [],
+        crops: [
+            "Soja",
+        ],
         brand: "Mist",
         description_html: "",
         id: "mst-vl",
@@ -472,7 +476,12 @@ export const products: Product[] = [
         slug: "mist-vg",
         category: "Vivificante de semillas",
         sub_category: undefined,
-        crops: [],
+        crops: [
+            'Girasol',
+            "Sorgo",
+            "Trigo",
+            "Maíz",
+        ],
         brand: "Mist",
         description_html: "",
         id: "mst-vg",
@@ -749,7 +758,13 @@ export const products: Product[] = [
         slug: "mist-tps",
         category: "Corrección de suelos",
         sub_category: undefined,
-        crops: [],
+        crops: [
+            "Sorgo",
+            "Trigo",
+            "Maíz",
+            "Soja",
+            "Girasol",
+        ],
         brand: "Mist",
         description_html: "",
         id: "mst-tps",
@@ -890,7 +905,6 @@ export const products: Product[] = [
         sub_category: undefined,
         crops: [
             "Cítricos",
-            "Trigo"
         ],
         brand: "Mist",
         description_html: "",
@@ -963,6 +977,7 @@ export const products: Product[] = [
         crops: [
             "Girasol",
             "Soja",
+            "Sorgo",
         ],
         brand: "Mist",
         description_html: "",
@@ -1036,7 +1051,9 @@ export const products: Product[] = [
             "Girasol",
             "Trigo",
             "Maíz",
-            "Algodón"
+            "Algodón",
+            "Sorgo",
+            "Soja",
         ],
         brand: "Mist",
         description_html: "",
@@ -1109,7 +1126,9 @@ export const products: Product[] = [
             "Girasol",
             "Trigo",
             "Maíz",
-            "Algodón"
+            "Algodón",
+            "Sorgo",
+            "Trigo",
         ],
         brand: "Mist",
         description_html: "",

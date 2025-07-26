@@ -43,7 +43,7 @@ export function DesktopNavigation() {
                                     </a>
                                 </NavigationMenuLink>
                             </li>
-                            <ListItem href="/empresa" title="Empresa">
+                            <ListItem href="/nosotros" title="Nosotros">
                                 Más de 6 años de experiencia en el sector agropecuario.
                             </ListItem>
                             <ListItem href="/noticias" title="Noticias">

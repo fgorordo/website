@@ -7,9 +7,9 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 
-interface PageProps {
+type PageProps = {
     params: Promise<{ slug: string }>;
-}
+};
 
 export async function generateStaticParams() {
     return products.map((product: Product) => ({
@@ -17,8 +17,8 @@ export async function generateStaticParams() {
     }));
 };
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-    const slug = params.slug;
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const { slug } = await params;
     const product = products.find((p) => p.slug === slug);
 
     if (!product) return {};

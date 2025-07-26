@@ -1,4 +1,4 @@
-import { HeroBanner } from '@/components/banners';
+import { HeroBanner, ProtocolsSection } from '@/components/banners';
 import { NanoBanner } from '@/components/banners/nano-banner';
 import { ContactSection } from '@/components/contact/contact';
 import { FeaturedProducts } from '@/components/featured-products';
@@ -10,6 +10,7 @@ export default function Home() {
       <HeroSection />
       <HeroBanner />
       <FeaturedProducts />
+      <ProtocolsSection />
       <NanoBanner />
       <ContactSection />
     </main>

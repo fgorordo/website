@@ -15,7 +15,7 @@ export const ProductCard = ({slug, category, image_url, name, sub_category, isOr
         <Link href={`/productos/${slug}`} className='group:hover'>
             <Card className="hover:shadow-xl transition-all duration-300 group h-full overflow-hidden bg-gradient-to-b from-secondary/30 via-muted/20 to-muted/10">
                 <CardHeader className='flex items-center justify-center relative'>
-                    <Image width={200} height={150} alt="Producto #1" src={image_url || ""} className="z-20 group-hover:scale-105 transition-transform duration-400" />
+                    <Image quality={100} loading='eager' width={200} height={150} alt={`Imagen del producto: ${name}`} src={image_url || ""} className="z-20 group-hover:scale-105 transition-transform duration-400" style={{height: 'auto', width: 'auto'}} />
                     <Image src={mistImage} alt='Logo de MIST' className='opacity-20 absolute right-1/2 top-1/2 left-1/2' height={600} />
                 </CardHeader>
                 <CardContent className="z-20">

@@ -6,7 +6,7 @@ type ProductNutritionCategory = "Microelementos" | "Macroelementos" | "Balancead
 
 type ProductVolumeState = "Liquidos" | "Granulados"
 
-export type Crops = "Pasturas" | "Frutales" | "Yerba Mate" | "Cítricos" | "Cebada" | "Girasol" | "Trigo" | "Maíz" | "Algodón" | "Soja";
+export type Crops = "Sorgo" | "Pasturas" | "Frutales" | "Yerba Mate" | "Cítricos" | "Cebada" | "Girasol" | "Trigo" | "Maíz" | "Algodón" | "Soja";
 
 type Brand = "Mist" | "Biome";
 

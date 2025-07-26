@@ -1,11 +1,10 @@
 "use client";
 
-import { FC, useEffect, useState } from 'react';
+import { FC } from 'react';
 import { PageHeader } from '../common';
 import Link from 'next/link';
 import clsx from 'clsx';
 import { ChevronRightIcon } from 'lucide-react';
-import { ReadonlyURLSearchParams, usePathname, useSearchParams } from 'next/navigation';
 import { ScrollArea } from '../ui/scroll-area';
 
 interface CatalogLinkProps {
@@ -38,7 +37,7 @@ export const CatalogFilters: FC = () => {
     return (
         <div className='md:w-[290px]'>
             <PageHeader title='Filtros' />
-            <ScrollArea className='h-[60vh] bg-muted-foreground/20 px-4 mt-4 rounded-lg'>
+            <ScrollArea className='h-[60vh] border px-4 mt-4 rounded-lg'>
                 <div className='mt-4'>
                     <p className='text-lg lg:text-2xl font-medium'>Categorias</p>
                     <hr className='border-primary rounded-lg mt-1' />
@@ -65,6 +64,7 @@ export const CatalogFilters: FC = () => {
                         <CatalogLink href='/productos?cultivo=Maíz' text='Maíz' />
                         <CatalogLink href='/productos?cultivo=Algodón' text='Algodón' />
                         <CatalogLink href='/productos?cultivo=Soja' text='Soja' />
+                        <CatalogLink href='/productos?cultivo=Sorgo' text='Sorgo' />
                         <div className='my-1'/>
                     </ul>
                 </div>

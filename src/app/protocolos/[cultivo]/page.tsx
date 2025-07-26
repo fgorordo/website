@@ -3,10 +3,14 @@ import { protocols } from '@/data';
 import { Protocol } from '../../../data/models/protocol.model';
 import Image from 'next/image';
 import { Metadata } from 'next';
+import { products } from '@/data/product.data';
+import { Crops } from '@/data/models';
+import { CardsContainer, ProductCard } from '@/components/cards';
 
-interface PageProps {
-    params: Promise<{ cultivo: string }>
-}
+type PageProps = {
+    params: Promise<{ cultivo: string }>;
+};
+
 
 export async function generateStaticParams() {
     return protocols.map((protocol: Protocol) => ({
@@ -14,8 +18,8 @@ export async function generateStaticParams() {
     }));
 };
 
-export async function generateMetadata({ params }: { params: { cultivo: string } }): Promise<Metadata> {
-    const cultivo = params.cultivo;
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const {cultivo} = await params;
     const protocol = protocols.find((p) => p.slug === cultivo);
 
     if (!protocol) return {};
@@ -65,6 +69,7 @@ export async function generateMetadata({ params }: { params: { cultivo: string }
 
 export default async function Page({ params }: PageProps) {
     const { cultivo } = await params;
+    const query  = cultivo === 'maiz' ? "Maíz" : cultivo
 
     const protocol = protocols.find(
         (p) => p.slug === cultivo
@@ -79,6 +84,8 @@ export default async function Page({ params }: PageProps) {
         );
     }
 
+    const productsToRender = products.filter(p => p.crops.includes(`${query.charAt(0).toUpperCase() + query.slice(1)}` as Crops));
+
     return (
         <PageContainer mainComponent>
             <div className='flex w-full gap-4 flex-col md:flex-row md:gap-12'>
@@ -90,7 +97,7 @@ export default async function Page({ params }: PageProps) {
                     </article>
                 </div>
                 <div className='rounded-xl overflow-hidden w-full relative min-h-[80px] order-1 md:order-2'>
-                    <Image alt={`Cultivos de ${protocol.crop_name}`} src={protocol.cover_img} fill style={{ objectFit: 'cover' }} />
+                    <Image alt={`Cultivos de ${protocol.crop_name}`} src={protocol.cover_img} fill style={{ objectFit: 'cover' }} loading='eager'/>
                 </div>
             </div>
             <hr className="w-full h-1 mx-auto bg-primary/50 border-0 rounded-sm md:my-4" />
@@ -101,7 +108,7 @@ export default async function Page({ params }: PageProps) {
                         src={protocol.protocol_img}
                         width={1200} // Ajusta según la resolución de tus imágenes
                         height={1200} // Ajusta según la proporción de tus imágenes 
-                        className="rounded-lg w-full"
+                        className="rounded-lg w-full max-h-[580px]"
                     />
                 </div>
                 <div className='mt-[32px]'>
@@ -113,6 +120,21 @@ export default async function Page({ params }: PageProps) {
                         ))
                     }
                 </div>
+            </article>
+            <article className='w-full'>
+                <CardsContainer>
+                    {
+                        productsToRender.map(p => <ProductCard
+                            key={p.id}
+                            name={p.name}
+                            image_url={p.image_url}
+                            category={p.category}
+                            sub_category={p.sub_category}
+                            slug={p.slug}
+                            product_volume_state={p.product_volume_state}
+                        />)
+                    }
+                </CardsContainer>
             </article>
         </PageContainer>
     );
