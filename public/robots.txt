@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
+Sitemap: https://www.ksqpergamino.com.ar/sitemap.xml 
 Disallow: /not-found
 Allow: /public

@@ -12,3 +12,5 @@ export * from './app-sidebar';
 export * from './mobile-header-layout';
 export * from './mobile-header';
 export * from './mobile-navigation'
+
+export * from './json-ld-schemas';

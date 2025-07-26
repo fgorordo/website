@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { mainMetadata } from "@/config/metadata";
-import { LayoutHeader,  } from '@/components/common';
+import { JsonLdSchemas, LayoutHeader,  } from '@/components/common';
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
@@ -22,6 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <head>
+        <JsonLdSchemas />
+      </head>
       <body
         className={`${montserrat.variable} antialiased`}
       >
