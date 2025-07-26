@@ -30,11 +30,11 @@ export const mainMetadata: Metadata = {
     title: 'KSQ Pergamino | Distribuidor regional Kioshi Stone',
     description:
       'Distribuidor regional de Kioshi Stone en la región. Fertilizantes bio y ecológicos de última generación para una agricultura regenerativa, rentable y consciente del medioambiente.',
-    url: 'https://ksqpergamino.com.ar', // Cambiar al dominio real
+    url: 'https://ksqpergamino.com.ar',
     siteName: 'KSQ Pergamino',
     images: [
       {
-        url: 'https://ksqpergamino.com.ar/og-image.svg', // Imagen real del sitio
+        url: '/og-image.svg',
         width: 1200,
         height: 630,
         alt: 'KSQ Pergamino - Distribuidor regional Kioshi Stone',
