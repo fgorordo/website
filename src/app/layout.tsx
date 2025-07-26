@@ -3,6 +3,10 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { mainMetadata } from "@/config/metadata";
 import { LayoutHeader,  } from '@/components/common';
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
+
 
 const montserrat = Montserrat({
   variable: "--font-montserrat-sans",
@@ -23,6 +27,8 @@ export default function RootLayout({
       >
         <LayoutHeader />
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
