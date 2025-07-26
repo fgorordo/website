@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         siteName: "KSQ Pergamino",
         images: [
             {
-                url: "https://ksqpergamino.com.ar/og-image.svg", // Podés reemplazar por una imagen específica si querés destacarla más
+                url: "https://ksqpergamino.com.ar/og-image.png", // Podés reemplazar por una imagen específica si querés destacarla más
                 width: 1200,
                 height: 630,
                 alt: "Noticias KSQ Pergamino",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         title: "Noticias | KSQ Pergamino",
         description:
             "Las últimas noticias del agro y avances en fertilización con nanotecnología. Leé más en KSQ Pergamino.",
-        images: ["https://ksqpergamino.com.ar/og-image.svg"],
+        images: ["https://ksqpergamino.com.ar/og-image.png"],
         site: "@tuTwitterEmpresa", // opcional
     },
     metadataBase: new URL("https://ksqpergamino.com.ar"),

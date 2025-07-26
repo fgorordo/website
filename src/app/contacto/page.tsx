@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         siteName: "KSQ Pergamino",
         images: [
             {
-                url: "https://ksqpergamino.com.ar/og-image.svg", // Podés usar otra específica si querés diferenciarla
+                url: "https://ksqpergamino.com.ar/og-image.png", // Podés usar otra específica si querés diferenciarla
                 width: 1200,
                 height: 630,
                 alt: "Contacto KSQ Pergamino",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Contacto | KSQ Pergamino",
         description: "Contactate con nosotros para obtener asesoramiento sobre fertilización sustentable y nanotecnología aplicada al agro.",
-        images: ["https://ksqpergamino.com.ar/og-image.svg"],
+        images: ["https://ksqpergamino.com.ar/og-image.png"],
         site: "@KSQPergamino", // opcional
     },
     metadataBase: new URL("https://ksqpergamino.com.ar"),

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "KSQ Pergamino",
     images: [
       {
-        url: "https://ksqpergamino.com.ar/og-image.svg",
+        url: "https://ksqpergamino.com.ar/og-image.png",
         width: 1200,
         height: 630,
         alt: "Ensayos agrícolas Kioshi Stone",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Biblioteca de Ensayos | KSQ Pergamino",
     description:
       "Comprobá cómo los fertilizantes nanométricos de Kioshi Stone transforman la productividad agrícola. Ensayos reales, datos concretos.",
-    images: ["https://ksqpergamino.com.ar/og-image.svg"],
+    images: ["https://ksqpergamino.com.ar/og-image.png"],
     site: "@KSQPergamino", // opcional
   },
   metadataBase: new URL("https://ksqpergamino.com.ar"),

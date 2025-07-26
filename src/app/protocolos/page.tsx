@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         siteName: "KSQ Pergamino",
         images: [
             {
-                url: "https://ksqpergamino.com.ar/og-image.svg",
+                url: "https://ksqpergamino.com.ar/og-image.png",
                 width: 1200,
                 height: 630,
                 alt: `Biblioteca de protocols`,
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Protocolos de aplicación",
         description: "Cómo aplicar nuestros productos de la línea MIST de manera efectiva, maximizando los beneficios para tu cultivo y minimizando cualquier impacto negativo en el entorno.",
-        images: ["https://ksqpergamino.com.ar/og-image.svg"],
+        images: ["https://ksqpergamino.com.ar/og-image.png"],
         site: "@KSQPergamino", // opcional
     },
     metadataBase: new URL("https://ksqpergamino.com.ar"),

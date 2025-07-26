@@ -34,7 +34,7 @@ export const mainMetadata: Metadata = {
     siteName: 'KSQ Pergamino',
     images: [
       {
-        url: '/og-image.svg',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: 'KSQ Pergamino - Distribuidor regional Kioshi Stone',

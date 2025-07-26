@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         siteName: "KSQ Pergamino",
         images: [
             {
-                url: "https://www.ksqpergamino.com.ar/images/og-image.svg", // 🔁 imagen destacada del catálogo (ideal: 1200x630)
+                url: "https://www.ksqpergamino.com.ar/images/og-image.png", // 🔁 imagen destacada del catálogo (ideal: 1200x630)
                 width: 1200,
                 height: 630,
                 alt: "Catálogo de Productos KSQ Pergamino",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Catálogo de Productos | KSQ Pergamino",
         description: "Explorá nuestro catálogo completo de fertilizantes y soluciones para cultivos.",
-        images: ["www.ksqpergamino.com.ar/og-image.svg"],
+        images: ["www.ksqpergamino.com.ar/og-image.png"],
         site: "@KSQPergamino", // opcional
     },
     metadataBase: new URL("https://www.ksqpergamino.com.ar"), // 🔁 dominio real

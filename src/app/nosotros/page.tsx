@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         siteName: "KSQ Pergamino",
         images: [
             {
-                url: "https://ksqpergamino.com.ar/og-image.svg",
+                url: "https://ksqpergamino.com.ar/og-image.png",
                 width: 1200,
                 height: 630,
                 alt: "KSQ Pergamino - Nosotros",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         title: "Nosotros | KSQ Pergamino",
         description:
             "En KSQ Pergamino trabajamos por un agro más rentable, eficiente y ecológico. Conocé nuestra historia y compromiso.",
-        images: ["https://ksqpergamino.com.ar/og-image.svg"],
+        images: ["https://ksqpergamino.com.ar/og-image.png"],
         site: "@KSQPergamino", // opcional
     },
     metadataBase: new URL("https://ksqpergamino.com.ar"),
