@@ -24,6 +24,7 @@ export const FeaturedProducts = () => {
                             category={p.category}
                             sub_category={p.sub_category}
                             slug={p.slug}
+                            product_volume_state={p.product_volume_state}
                         />
                     ))
                 }

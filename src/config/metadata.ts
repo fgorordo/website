@@ -27,17 +27,17 @@ export const mainMetadata: Metadata = {
     'fertilizantes amigables con el ambiente'
   ],
   openGraph: {
-    title: 'KSQ Pergamino | Fertilizantes Sustentables con Nanotecnología',
+    title: 'KSQ Pergamino | Distribuidor regional Kioshi Stone',
     description:
-      'Distribuidora oficial de Kioshi Stone en la región. Fertilizantes bio y ecológicos de última generación para una agricultura regenerativa, rentable y consciente del medioambiente.',
+      'Distribuidor regional de Kioshi Stone en la región. Fertilizantes bio y ecológicos de última generación para una agricultura regenerativa, rentable y consciente del medioambiente.',
     url: 'https://ksqpergamino.com.ar', // Cambiar al dominio real
     siteName: 'KSQ Pergamino',
     images: [
       {
-        url: 'https://ksqpergamino.com.ar/og-image.jpg', // Imagen real del sitio
+        url: 'https://ksqpergamino.com.ar/og-image.svg', // Imagen real del sitio
         width: 1200,
         height: 630,
-        alt: 'Fertilizantes ecológicos KSQ Pergamino - Kioshi Stone',
+        alt: 'KSQ Pergamino - Distribuidor regional Kioshi Stone',
       },
     ],
     locale: 'es_AR',
@@ -45,14 +45,14 @@ export const mainMetadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'KSQ Pergamino | Fertilizantes Ecológicos y Sustentables',
+    title: 'KSQ Pergamino | Distribuidor regional Kioshi Stone',
     description:
       'Soluciones agrícolas responsables: fertilizantes bio con nanotecnología de Kioshi Stone. Más rendimiento, menos impacto. Distribución en zona Pergamino y alrededores.',
-    images: ['https://ksqpergamino.com.ar/twitter-image.jpg'], // Imagen real
+    images: ['https://ksqpergamino.com.ar/og-image.svg'], // Imagen real
     creator: '@ksqpergamino', // Agregar si existe cuenta de Twitter
   },
   authors: [{ name: 'KSQ Pergamino', url: 'https://ksqpergamino.com.ar' }],
-  category: 'Agricultura sustentable, Tecnología verde, Biofertilizantes',
+  category: 'Agricultura sustentable, Tecnología verde, Biofertilizantes, Nanotecnología, Kioshi Stone, Mist, Biome, Kioshi',
   generator: 'Next.js',
   applicationName: 'KSQ Pergamino',
   metadataBase: new URL('https://ksqpergamino.com.ar'),

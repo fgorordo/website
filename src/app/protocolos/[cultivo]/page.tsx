@@ -16,15 +16,50 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: { cultivo: string } }): Promise<Metadata> {
     const cultivo = params.cultivo;
-    const protocol = protocols.find(
-        (p) => p.slug === cultivo
-    );
+    const protocol = protocols.find((p) => p.slug === cultivo);
 
     if (!protocol) return {};
 
+    const title = `Protocolo de ${protocol.crop_name} | KSQ Pergamino`;
+    const description = `Protocolo de aplicación recomendado para cultivos de ${protocol.crop_name} con tecnología de fertilización sustentable.`;
+    const url = `https://ksqpergamino.com.ar/protocolos/${protocol.slug}`;
+    const image = protocol.cover_img || "https://ksqpergamino.com.ar/og-image.svg";
+
     return {
-        title: 'Protocolo de ' + protocol.crop_name,
-        description: 'Protocolo de aplicacición recomendado para cultivos de ' + protocol.crop_name,
+        title,
+        description,
+        alternates: {
+            canonical: url,
+        },
+        openGraph: {
+            title,
+            description,
+            url,
+            siteName: "KSQ Pergamino",
+            images: [
+                {
+                    url: image,
+                    width: 1200,
+                    height: 630,
+                    alt: `Protocolo de ${protocol.crop_name}`,
+                },
+            ],
+            locale: "es_AR",
+            type: "article",
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
+            images: [image],
+            site: "@KSQPergamino", // opcional
+        },
+        metadataBase: new URL("https://ksqpergamino.com.ar"),
+        robots: {
+            index: true,
+            follow: true,
+        },
+        category: "agricultura",
     };
 }
 
@@ -55,7 +90,7 @@ export default async function Page({ params }: PageProps) {
                     </article>
                 </div>
                 <div className='rounded-xl overflow-hidden w-full relative min-h-[80px] order-1 md:order-2'>
-                    <Image alt={`Cultivos de ${protocol.crop_name}`} src={protocol.cover_img} fill  style={{objectFit: 'cover'}}/>
+                    <Image alt={`Cultivos de ${protocol.crop_name}`} src={protocol.cover_img} fill style={{ objectFit: 'cover' }} />
                 </div>
             </div>
             <hr className="w-full h-1 mx-auto bg-primary/50 border-0 rounded-sm md:my-4" />

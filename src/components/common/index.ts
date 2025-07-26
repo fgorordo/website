@@ -7,3 +7,4 @@ export * from './desktop-navigation';
 export * from './layout-header';
 export * from './form-confirmation-dialog';
 export * from './required-field';
+export * from './share-buttons';

@@ -6,9 +6,53 @@ type ProductNutritionCategory = "Microelementos" | "Macroelementos" | "Balancead
 
 type ProductVolumeState = "Liquidos" | "Granulados"
 
-type Crops = "Pasturas" | "Frutas" | "Yerba Mate" | "Cítricos" | "Cebada" | "Girasol" | "Trigo" | "Maíz" | "Algodón" | "Soja" ;
+export type Crops = "Pasturas" | "Frutales" | "Yerba Mate" | "Cítricos" | "Cebada" | "Girasol" | "Trigo" | "Maíz" | "Algodón" | "Soja";
 
 type Brand = "Mist" | "Biome";
+
+type HtmlContent = {
+    descripction?: string;
+    effects?: {
+        list?: string[];
+        common?: string,
+    };
+    content?: {
+        list?: string[];
+    };
+    properties?: {
+        list?: string[];
+    };
+    storage?: {
+        list?: string[];
+    };
+    volume?: {
+        list?: string[];
+    };
+    packaging?: string;
+    application_dosage?: {
+        extensive_industrial_fruits?: {
+            title?: string;
+            type?: string;
+            dose?: string;
+        },
+        intensive?: {
+            title?: string;
+            type?: string;
+            dose?: string;
+        },
+        others?: string[];
+        image_url?: string;
+    };
+    reccommendations?: {
+        text?: string;
+        pulverization?: string;
+        fertiriego?: string;
+        aereo?: string;
+    };
+    cautions_and_warnings?: {
+        text?: string;
+    };
+}
 
 export type Product = {
     id: string;
@@ -16,6 +60,7 @@ export type Product = {
     slug: string;
     name: string;
     description_html: string;
+    html_content: HtmlContent;
     image_url: string;
     product_volume_state: ProductVolumeState;
     category: ProductCategory;

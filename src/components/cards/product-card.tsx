@@ -10,7 +10,7 @@ interface ProductCardProps extends Partial<Product> {
     isOrganicCertificated?: boolean;
 }
 
-export const ProductCard = async ({slug, category, image_url, name, sub_category, isOrganicCertificated = false }: ProductCardProps) => {
+export const ProductCard = ({slug, category, image_url, name, sub_category, isOrganicCertificated = false, product_volume_state }: ProductCardProps) => {
     return (
         <Link href={`/productos/${slug}`} className='group:hover'>
             <Card className="hover:shadow-xl transition-all duration-300 group h-full overflow-hidden bg-gradient-to-b from-secondary/30 via-muted/20 to-muted/10">
@@ -27,11 +27,10 @@ export const ProductCard = async ({slug, category, image_url, name, sub_category
                                 : ""
                         }
                     </div>
-                    <CardDescription className='font-semibold text-black text-start'>Correción de suelo</CardDescription>
+                    <CardDescription className='font-semibold text-black text-start'>{category}</CardDescription>
                     <CardDescription className='text-start'>{sub_category ? sub_category : '-'}</CardDescription>
+                    <CardDescription className='text-start text-xs mt-2'>Tipo: <span className='font-semibold'>{product_volume_state}</span></CardDescription>
                 </CardContent>
-                <CardFooter className='flex flex-col items-start'>
-                </CardFooter>
             </Card>
         </Link>
     )

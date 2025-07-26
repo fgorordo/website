@@ -7,7 +7,7 @@ interface PageTitleProps extends PropsWithChildren {
 
 export const PageTitle: FC<PageTitleProps> = ({children, textCenter}) => {
     return (
-        <h1 className={clsx('font-semibold text-primary w-full text-3xl lg:text-4xl', textCenter ? 'text-center' : '')}>{children}</h1>
+        <h1 className={clsx('font-semibold text-primary w-full text-2xl lg:text-4xl', textCenter ? 'text-center' : '')}>{children}</h1>
     )
 }
 

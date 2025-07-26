@@ -6,8 +6,44 @@ import { Metadata } from 'next';
 
 
 export const metadata: Metadata = {
-  title: "Biblioteca de Ensayos" 
-}
+  title: "Biblioteca de Ensayos | KSQ Pergamino",
+  description:
+    "Explorá nuestra colección de ensayos agrícolas realizados en campo. Comprobá cómo los fertilizantes nanométricos de Kioshi Stone mejoran la productividad de manera sustentable.",
+  alternates: {
+    canonical: "https://ksqpergamino.com.ar/ensayos",
+  },
+  openGraph: {
+    title: "Biblioteca de Ensayos | KSQ Pergamino",
+    description:
+      "Resultados reales en campo que validan el uso de fertilizantes con nanotecnología. Conocé los ensayos de Kioshi Stone en distintos cultivos y regiones.",
+    url: "https://ksqpergamino.com.ar/ensayos",
+    siteName: "KSQ Pergamino",
+    images: [
+      {
+        url: "https://ksqpergamino.com.ar/og-image.svg",
+        width: 1200,
+        height: 630,
+        alt: "Ensayos agrícolas Kioshi Stone",
+      },
+    ],
+    locale: "es_AR",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Biblioteca de Ensayos | KSQ Pergamino",
+    description:
+      "Comprobá cómo los fertilizantes nanométricos de Kioshi Stone transforman la productividad agrícola. Ensayos reales, datos concretos.",
+    images: ["https://ksqpergamino.com.ar/og-image.svg"],
+    site: "@KSQPergamino", // opcional
+  },
+  metadataBase: new URL("https://ksqpergamino.com.ar"),
+  robots: {
+    index: true,
+    follow: true,
+  },
+  category: "agricultura",
+};
 
 export default function Page() {
     return (

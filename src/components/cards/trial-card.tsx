@@ -9,10 +9,10 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
-import { IconDownload } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
+import { DownloadIcon } from 'lucide-react';
 
 interface TrialCardProps extends Trial { }
 
@@ -25,7 +25,7 @@ export const TrialCard: FC<TrialCardProps> = ({ pdf_url, thumbnail, title }) => 
             </CardContent>
             <CardFooter className="ml-auto">
                 <Button size={"sm"} className="font-normal" asChild>
-                    <Link href={pdf_url} target="_blank">Obtener ensayo <span><IconDownload /></span></Link>
+                    <Link href={pdf_url} target="_blank">Obtener ensayo <span><DownloadIcon /></span></Link>
                 </Button>
             </CardFooter>
         </Card>
