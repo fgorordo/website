@@ -7,7 +7,7 @@ export const protocols: Protocol[] = [
         crop_svg: "https://kioshistone.nyc3.digitaloceanspaces.com/kioshistone/Icono%20Sorgo.svg",
         protocol_img: "https://kioshistone.nyc3.digitaloceanspaces.com/kioshistone/Protocolo%20Sorgo-3.svg",
         associated_products_id: ['mst-p', 'mst-vg', 'mst-tps', 'mst-n', 'mst-b', 'mst-k'],
-        captions: ["(i) El Mist N puede ser aplicado en dos partes una como arrancador y otra en V4 a V6", "(ii) El Mist B aplicarlo en V8 - V12.", "(iii) El Mist K/Cl aplicarlo en prefloración.", "Las recomendaciones son generales, pueden variar por diversos factores y criterios. Consulte con su asesor. Los productos Mist son compatibles con fitosanitarios, sin embargo se recomienda efectuar pruebas en jarra previo a realizar el caldo."],
+        captions: [ "(i) El Mist B aplicarlo en V8 - V12.", "(ii) El Mist K/Cl aplicarlo en prefloración.", "Las recomendaciones son generales, pueden variar por diversos factores y criterios. Consulte con su asesor. Los productos Mist son compatibles con fitosanitarios, sin embargo se recomienda efectuar pruebas en jarra previo a realizar el caldo."],
         cover_img: "https://kioshistone.nyc3.digitaloceanspaces.com/kioshistone/Protocolo-Sorgo.jpg",
     },
     {
