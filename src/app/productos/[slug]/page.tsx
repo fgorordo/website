@@ -100,7 +100,7 @@ export default async function Page({ params }: PageProps) {
                             <h1 className='text-4xl lg:text-5xl font-medium z-20 mb-0'>{product.name}</h1>
                             <div className='flex flex-row gap-4'>
                                 <Button asChild><Link href={product.pdf_url} target='_blank'>Ver Ficha técnica<DownloadIcon /></Link></Button>
-                                <Button asChild><Link href={'#'} target='_blank'>Contactar asesor</Link></Button>
+                                <Button asChild><Link href={'/contacto'} target='_blank'>Contactar asesor</Link></Button>
                             </div>
                         </div>
                         <p>{`${product.html_content.descripction}`}</p>
@@ -123,14 +123,18 @@ export default async function Page({ params }: PageProps) {
                                 </div>
                             )
                         }
-                        <div>
-                            <h3 className='font-bold mb-2'>CONTENIDO Y RIQUEZA GARANTIZADA:</h3>
-                            <ul className='flex flex-col mb-2'>
-                                {
-                                    product.html_content.content && product.html_content.content.list?.map(e => <li key={e}>{e}</li>)
-                                }
-                            </ul>
-                        </div>
+                        {
+                            product.html_content.content && (
+                                <div>
+                                    <h3 className='font-bold mb-2'>CONTENIDO Y RIQUEZA GARANTIZADA:</h3>
+                                    <ul className='flex flex-col mb-2'>
+                                        {
+                                            product.html_content.content && product.html_content.content.list?.map(e => <li key={e}>{e}</li>)
+                                        }
+                                    </ul>
+                                </div>
+                            )
+                        }
                         {
                             product.html_content.properties && (
                                 <div>
@@ -260,7 +264,7 @@ export default async function Page({ params }: PageProps) {
                         }
 
                         <div className='mt-10'>
-                            <ShareButtons url={product.slug} title={product.name + ' - Fertilizante | KSQ Pergamino'}/>
+                            <ShareButtons url={product.slug} title={product.name + ' - Fertilizante | KSQ Pergamino'} />
                         </div>
                     </div>
                 </div>

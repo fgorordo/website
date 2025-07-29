@@ -339,6 +339,8 @@ export const products: Product[] = [
         crops: [
             "Trigo",
             "Maíz",
+            "Sorgo",
+            "Pasturas",
         ],
         brand: "Mist",
         description_html: "",
@@ -687,7 +689,7 @@ export const products: Product[] = [
         slug: "mist-tps-78",
         category: "Corrección de suelos",
         sub_category: undefined,
-        crops: [],
+        crops: ["Algodón", "Cebada", "Cítricos", "Frutales", "Girasol", "Maíz", "Pasturas", "Soja", "Sorgo", "Trigo", "Yerba Mate"],
         brand: "Mist",
         description_html: "",
         id: "mst-tps-78",
@@ -759,11 +761,7 @@ export const products: Product[] = [
         category: "Corrección de suelos",
         sub_category: undefined,
         crops: [
-            "Sorgo",
-            "Trigo",
-            "Maíz",
-            "Soja",
-            "Girasol",
+            "Algodón", "Cebada", "Cítricos", "Frutales", "Girasol", "Maíz", "Pasturas", "Soja", "Sorgo", "Trigo", "Yerba Mate"
         ],
         brand: "Mist",
         description_html: "",
@@ -833,7 +831,7 @@ export const products: Product[] = [
         slug: "mist-tps-65",
         category: "Corrección de suelos",
         sub_category: undefined,
-        crops: [],
+        crops: ["Algodón", "Cebada", "Cítricos", "Frutales", "Girasol", "Maíz", "Pasturas", "Soja", "Sorgo", "Trigo", "Yerba Mate"],
         brand: "Mist",
         description_html: "",
         id: "mst-tps-65",
@@ -1044,8 +1042,8 @@ export const products: Product[] = [
     {
         name: "Mist P",
         slug: "mist-p",
-        category: "Nutrición",
-        sub_category: "Macroelementos",
+        category: "Arrancador de cultivos",
+        sub_category: undefined,
         crops: [
             "Cebada",
             "Girasol",
@@ -1134,7 +1132,7 @@ export const products: Product[] = [
         description_html: "",
         id: "mst-n",
         image_url: "https://kioshistone.nyc3.digitaloceanspaces.com/kioshistone/Producto%20N-8.png",
-        pdf_url: "",
+        pdf_url: "https://kioshistone.nyc3.digitaloceanspaces.com/kioshistone/MIST%20N-%20Kioshi%20Stone%20-%20Ficha%20T%C3%83%C2%A9cnica-1.pdf",
         product_volume_state: "Liquidos",
         html_content: {
             descripction: `MIST-N®: como es habitual en los productos MIST, se utiliza una dispersión nano mineral que aloja en sus poros el Nitrógeno. Este Carrier almacena y dosifica el elemento en la medida que la planta o el suelo lo requiera. El Nitrógeno contenido más el Calcio, el Magnesio y el Azufre generan la sinergia que acompaña el crecimiento de los cultivos y puede ser aplicado en cualquier momento sobre el cultivo sin inducir estrés en la planta. La presencia de calcio mejora la absorción de nutrientes, mientras que el magnesio participa en la formación de la clorofila y por ende en el proceso de fotosíntesis. En tanto el nitrógeno es uno de los constituyentes de los compuestos orgánicos de los vegetales. Interviene en la multiplicación celular y su factor de crecimiento. Por su parte el azufre es necesario para la formación de los aminoácidos, proteínas y vitaminas.`,
@@ -1190,6 +1188,61 @@ export const products: Product[] = [
             },
             cautions_and_warnings: {
                 text: `Se advierte que la empresa garantiza el contenido y riquezas declaradas en la etiqueta, sin embargo, en su utilización pueden intervenir factores que escapan a nuestro control como son la preparación de mezclas, la aplicación, la climatología, entre otros. El usuario será responsable de los daños causados al cultivo, al suelo o al aplicador, por inobservancia total o parcial de la información explicada en esta etiqueta. Utilizar sólo en caso de reconocida necesidad, sin sobrepasar las dosis recomendadas. Se recomienda su aplicación bajo asesoramiento técnico agronómico.`
+            }
+        }
+    },
+    {
+        name: "Biome b-Phos 10-40",
+        slug: "biome-b-phos-10-40",
+        category: "Arrancador de cultivos",
+        sub_category: undefined,
+        crops: [
+            "Algodón",
+            "Cebada",
+            "Cítricos",
+            "Frutales",
+            "Girasol",
+            "Maíz",
+            "Maíz",
+            "Pasturas",
+            "Soja",
+            "Sorgo",
+            "Trigo",
+            "Yerba Mate"
+        ],
+        brand: "Biome",
+        description_html: "",
+        id: "biome-b-phos-10-40",
+        image_url: "https://kioshistone.nyc3.digitaloceanspaces.com/kioshistone/bPhos-packaging.png",
+        pdf_url: "https://kioshistone.nyc3.digitaloceanspaces.com/kioshistone/Biome%20B-PHOS%2010-40%20%20Kioshi%20Stone%20%20Ficha%20T%C3%83%C2%A9cnica.pdf",
+        product_volume_state: "Granulados",
+        html_content: {
+            descripction: `b-Phos es un fertilizante microgranulado diseñado para ser aplicado en la siembra junto a la semilla de manera segura sin riesgo de fitotoxicidad.
+            Su fórmula equilibrada en cada microgránulo ofrece nítrógeno, fósforo, azufre, Zinc, Calcio, Boro y  microelementos favoreciendo el desarrollo radicular y la emergencia rápida y uniforme del cultivo.
+            La formulación exclusiva de b-Phos compuesta por elementos solubles y nanopartículas minerales permite una mayor biodisponibilidad de nutrientes maximizando la distribución uniforme de los nutrientes en torno a cada semilla.`,
+            storage: {
+                list: [
+                    "Almacenar en un lugar cerrado, fresco, seco y lejos de la luz del sol.",
+                    "Almacenar en su envase original, en un lugar seguro y lejos del alcance de los niños. No almacenar cerca de semillas, alimentos y alimentos para forrajes."
+                ]
+            },
+            application_dosage: {
+                others: ["b-Phos se encuentra especialmente formulado para su aplicación en máquinas sembradoras adaptadas para la aplicación del fertilizante al momento de la siembra, junto a la semilla."]
+            },
+            cautions_and_warnings: {
+                text: `
+                - Como el almacenamiento, la época, lugar y dosis de la aplicación están fuera del control del vendedor y/o fabricante, eventuales daños a causa del almacenamiento u otras condiciones de uso introducidas por el usuario de manera diversa o por encima de las especificadas por el vendedor y/o fabricante no son de su responsabilidad.\n
+                1- El vendedor y/o fabricante garantiza exclusivamente que este producto contiene los ingredientes y niveles especificados en la etiqueta.\n
+                - PARA MAYOR INFORMACIÓN CONSULTAR A UN INGENIERO AGRÓNOMO.\n
+                - NO EXCEDER LAS DOSIS INDICADAS, PODRÍA EXISTIR RIESGO DE FITOTOXICIDAD.\n
+                - MANTENER ALEJADO DEL ALCANCE DE LOS NIÑOS Y PERSONAS INEXPERTAS.\n
+                - NO TRANSPORTAR NI ALMACENAR CON ALIMENTOS.\n
+                - INUTILIZAR LOS ENVASES VACIOS PARA EVITAR OTROS USOS.\n
+                - EN CASO DE INTOXICACIÓN LLEVAR ESTA ETIQUETA AL MÉDICO.\n
+                TRATAMIENTO Y MÉTODO DE DESTRUCCION DE ENVASES:\n
+                Su tratamiento y/o disposición deben realizarse de acuerdo a normas legales aplicables.\n
+                - NO REUTILIZAR ESTE ENVASE.\n
+                `
             }
         }
     },
